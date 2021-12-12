@@ -37,7 +37,7 @@ Then run ```bash BlakeStream_Docker.sh```
 <br>
 <b>I tried to make this as seamless as possable</b>
 <br>
-The script 
+This script:
 <br>
 -- will create data directories
 <br>
