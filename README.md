@@ -1,6 +1,6 @@
 <b>Deploy BlakeStream Coins with Docker Compose</b>
 <br>
-Curently everything is run as root
+*** Curently everything is run as root ***
 <br>
 https://hub.docker.com/u/sidgrip
 <br>
