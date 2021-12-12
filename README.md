@@ -5,6 +5,9 @@
 https://hub.docker.com/u/sidgrip
 <br>
 <br>
+This was tested on a clean & updated install of Ubuntu 20.04
+<br>
+<br>
 <b>Setup Docker Compose on you system</b>
 <br>
 ``` groupadd docker ```
