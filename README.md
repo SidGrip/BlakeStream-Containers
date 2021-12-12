@@ -2,6 +2,8 @@
 <br>
 Curently everything is run as root
 <br>
+https://hub.docker.com/u/sidgrip
+<br>
 <br>
 <b>Setup Docker Compose on you system</b>
 <br>
