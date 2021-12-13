@@ -1,5 +1,4 @@
 #!/bin/bash
-#
 MAXCONNECTIONS='maxconnections=20'
 RPCALLOWIP='rpcallowip=0.0.0.0/0'
 GEN='gen=0'
@@ -7,7 +6,6 @@ LISTEN='listen=1'
 DAEMON='daemon=0'
 SERVER='server=1'
 TXINDEX='txindex=1'
-#
 FTP='https://bootstrap.specminer.com'
 USER=$(whoami)
 USERDIR=$(eval echo ~$user)
