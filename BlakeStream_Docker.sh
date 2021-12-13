@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-MAXCONNECTIONS='maxconnections=22'
+MAXCONNECTIONS='maxconnections=20'
 RPCALLOWIP='rpcallowip=0.0.0.0/0'
 GEN='gen=0'
 LISTEN='listen=1'
