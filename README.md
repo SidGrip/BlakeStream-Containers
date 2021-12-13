@@ -10,6 +10,8 @@ This was tested on a clean & updated install of Ubuntu 20.04
 Install Docker Compose First
 <br>
 <br>
+<b> Deploy Blake Nodes with Docker Compose</b>
+<br>
 Copy & paste into terminal window
 <br>
 ```wget https://raw.githubusercontent.com/SidGrip/BlakeStream-Containers/main/BlakeStream_Docker.sh```
