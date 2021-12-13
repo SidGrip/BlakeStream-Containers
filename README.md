@@ -8,15 +8,6 @@ https://hub.docker.com/u/sidgrip
 This was tested on a clean & updated install of Ubuntu 20.04
 <br>
 <br>
-<b>Setup Docker Compose on you system</b>
-<br>
-``` groupadd docker ```
-<br>
-``` gpasswd -a $USER docker ```
-<br>
-``` exit ``` to disconnect from your VPS
-<br>
-<br>
 <b>Install Docker Compose</b>
 <br>
 Copy & paste into terminal window
