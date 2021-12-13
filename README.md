@@ -7,17 +7,8 @@ https://hub.docker.com/u/sidgrip
 <br>
 This was tested on a clean & updated install of Ubuntu 20.04
 <br>
+Install Docker Compose First
 <br>
-<b>Install Docker Compose</b>
-<br>
-Copy & paste into terminal window
-<br>
-```wget https://raw.githubusercontent.com/SidGrip/BlakeStream-Containers/main/Install_Docker.sh```
-<br>
-Then run ```bash Install_Docker.sh```
-<br>
-<br>
-<b> Deploy Blake Nodes with Docker Compose</b>
 <br>
 Copy & paste into terminal window
 <br>
