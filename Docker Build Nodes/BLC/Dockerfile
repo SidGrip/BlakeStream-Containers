@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
  && apt install --no-install-recommends -y software-properties-common \
@@ -8,11 +8,12 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  && mkdir -p /root/.blakecoin \
- && git clone https://github.com/BlueDragon747/Blakecoin.git \
+ && git clone -b 16.04 https://github.com/BlueDragon747/Blakecoin.git \
  && chmod +x Blakecoin/src/leveldb/build_detect_platform \
  && cd Blakecoin/src \
  && make -f makefile.unix \
  && strip blakecoind \
- && cp blakecoind /usr/bin/
+ && cp blakecoind /usr/local/bin/ \
+ && rm -rf Blakecoin
 
-CMD ["/usr/bin/blakecoind", "-datadir=/root/.blakecoin", "--printtoconsole"]
+CMD ["/usr/local/bin/blakecoind", "-datadir=/root/.blakecoin", "--printtoconsole"]
