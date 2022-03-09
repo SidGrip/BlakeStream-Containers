@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
  && apt install --no-install-recommends -y software-properties-common \
@@ -8,11 +8,12 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  && mkdir -p /root/.photon \
- && git clone https://github.com/photonproject/photon.git \
+ && git clone -b 16.04 https://github.com/photonproject/photon.git \
  && chmod +x photon/src/leveldb/build_detect_platform \
  && cd photon/src \
  && make -f makefile.unix \
  && strip photond \
- && cp photond /usr/bin/
+ && cp photond /usr/local/bin/ \
+ && rm -rf photon
 
-CMD ["/usr/bin/photond", "-datadir=/root/.photon", "--printtoconsole"]
+CMD ["/usr/local/bin/photond", "-datadir=/root/.photon", "--printtoconsole"]
