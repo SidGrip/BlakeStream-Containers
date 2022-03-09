@@ -179,7 +179,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$BLC_COIN_DAEMON
 #!/bin/bash
-  docker exec BLC /usr/bin/blakecoind "$@"
+  docker exec BLC /usr/local/bin/blakecoind "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$BLC_COIN_DAEMON
 
@@ -253,7 +253,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$PHO_COIN_DAEMON
 #!/bin/bash
-  docker exec PHO /usr/bin/photond "$@"
+  docker exec PHO /usr/local/bin/photond "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$PHO_COIN_DAEMON
 
@@ -327,7 +327,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$BBTC_COIN_DAEMON
 #!/bin/bash
-  docker exec BBTC /usr/bin/blakebitcoind "$@"
+  docker exec BBTC /usr/local/bin/blakebitcoind "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$BBTC_COIN_DAEMON
 
@@ -401,7 +401,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$ELT_COIN_DAEMON
 #!/bin/bash
-  docker exec ELT /usr/bin/electrond "$@"
+  docker exec ELT /usr/local/bin/electrond "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$ELT_COIN_DAEMON
 
@@ -476,7 +476,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$UMO_COIN_DAEMON
 #!/bin/bash
-  docker exec UMO /usr/bin/universalmoleculed "$@"
+  docker exec UMO /usr/local/bin/universalmoleculed "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$UMO_COIN_DAEMON
 
@@ -552,7 +552,7 @@ EOF
 #Daemon_script
 cat << 'EOT' > $COIN_PATH/$LIT_COIN_DAEMON
 #!/bin/bash
-  docker exec LIT /usr/bin/lithiumd "$@"
+  docker exec LIT /usr/local/bin/lithiumd "$@"
 EOT
 sudo chmod u+x $COIN_PATH/$LIT_COIN_DAEMON
 
