@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
  && apt install --no-install-recommends -y software-properties-common \
@@ -8,11 +8,12 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  && mkdir -p /root/.electron \
- && git clone https://github.com/BlueDragon747/Electron-ELT.git \
+ && git clone -b 16.04 https://github.com/BlueDragon747/Electron-ELT.git \
  && chmod +x Electron-ELT/src/leveldb/build_detect_platform \
  && cd Electron-ELT/src \
  && make -f makefile.unix \
  && strip electrond \
- && cp electrond /usr/bin/
+ && cp electrond /usr/local/bin/ \
+ && rm -rf Electron-ELT
 
-CMD ["/usr/bin/electrond", "-datadir=/root/.electron", "--printtoconsole"]
+CMD ["/usr/local/bin/electrond", "-datadir=/root/.electron", "--printtoconsole"]
